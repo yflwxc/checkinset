@@ -54,10 +54,10 @@ class DaKa(object):
     def login(self):
         """Login to BUPT platform"""
         print("登录")
-        # res = self.sess.get(self.login_url)
-        #
-        # if res.status_code != 200:
-        #     raise Exception("{} 登陆平台失败，失败代码{}".format(self.username, res.status_code))
+        res = self.sess.get(self.login_url)
+        
+        if res.status_code != 200:
+            raise Exception("{} 登陆平台失败，失败代码{}".format(self.username, res.status_code))
 
         data = {
             'username': self.username,
