@@ -63,7 +63,7 @@ class DaKa(object):
             'username': self.username,
             'password': self.password,
         }
-        res = self.sess.post(url=self.login_check_url, data=data)
+        res = self.sess.post(url=self.login_check_url, data=data, verify=False)
         ret = json.loads(res.content.decode())
 
         if ret['e'] != 0:
