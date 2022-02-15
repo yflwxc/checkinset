@@ -1,0 +1,14 @@
+{
+    "info": [
+        {
+            "username": "202021210015",
+            "password": "qutuo123",
+            "schedule": {
+                "on": false,
+                "hour": "0",
+                "minute": "3"
+            },
+            "sms_number": "13001273104"
+        }
+        ]
+}
