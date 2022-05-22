@@ -26,6 +26,3 @@ data = {
 data = json.dumps(data)
 response = requests.post(url=url, headers=headers, data=data)
 print(response.json())
-# with open('res.txt', 'w') as res:
-#     res.write(response.content.decode('utf-8'))
-
