@@ -21,11 +21,11 @@ headers = {
 
 url = 'https://glados.rocks/api/user/checkin'
 data = {
-    "token":"glados_network"
+    "token":"glados.network"
 }
 data = json.dumps(data)
 response = requests.post(url=url, headers=headers, data=data)
-print(response)
+print(response.json())
 # with open('res.txt', 'w') as res:
 #     res.write(response.content.decode('utf-8'))
 
